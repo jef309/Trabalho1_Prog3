@@ -90,7 +90,9 @@ body {
     width: 40vw;
     
 }
- #enviar, #atualizar, #excluir {
+
+/* ++++++++++++++ botoes +++++++++++++++*/
+ #enviar, #atualizar, #excluir, #cancelar  {
     border: 2px;
     color: red;
     border-radius: 50px;
@@ -113,4 +115,23 @@ body {
    padding: 13px;
    margin-top: 8px;
     
+}
+
+
+/* --------------- formulario pagina 3 -----------------*/
+
+#oFormulario fieldset{
+    margin: 5px;
+    border-radius: 15px;
+    border: 1px solid #ff0000;
+
+}
+
+#texto {
+    text-align: center;
+}
+
+#texto input{
+    text-align: center;
+    width: 50vw;
 }

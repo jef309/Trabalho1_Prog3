@@ -34,11 +34,37 @@
             <div id="quadroCentral">
                 <h1>Página das Aboboras Magicas</h1>
 
-               <form method="post">
-                    <input type="select" >
+               <form method="post" id="oFormulario">
+                    <fieldset id="texto">
+                        <input type="text" >
+                    </fieldset>
 
-                    <input type="button" id="cancelar" value="Cancelar">
-                    <input type="button" id="salvar" value="Enviar">
+                    <fieldset id="selecao">
+                        <select name="doces">
+                            <option value="chocolate">coisa1</option>
+                            <option value="bala">coisa2</option>
+                            <option value="sorvete">coisa3</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset id="textarea">
+                        <textarea></textarea>
+                    </fieldset>
+
+                    <fieldset id="radio">
+                        <label for="outraCoisa1">Outra Coisa1</label><input type="radio" name="coisa" id="outraCoisa1">
+                        <label for="outraCoisa2">Outra Coisa2</label><input type="radio" name="coisa" id="outraCoisa2">
+                        <label for="outraCoisa3">Outra Coisa3</label><input type="radio" name="coisa" id="outraCoisa3">
+                    </fieldset>
+
+                    <fieldset id="checkbox">
+                        <label for="maisUmaCoisa">Uma Coisa</label><input type="checkbox" id="maisUmaCoisa">
+                        <label for="maisUmaCoisa2">UM MOMENTO! </label><input type="checkbox" id="maisUmaCoisa2">
+                        <label for="maisUmaCoisa3">PASSAR BEM!</label><input type="checkbox" id="maisUmaCoisa3">
+                    </fieldset>
+
+                    <input type="reset" id="cancelar" value="Cancelar">
+                    <input type="submit" id="enviar" value="Salvar">
 
                </form>
             </div>   
