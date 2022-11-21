@@ -4,6 +4,7 @@ body {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 12pt;
+    text-align: justify;
     
 }
 
@@ -38,6 +39,8 @@ body {
     
 }
 
+
+
 .menuLateral img{
 
     width: 75%;
@@ -46,14 +49,26 @@ body {
 }
 
 .menuLateral li{ 
-    padding: 7px;
+    text-align: center;
     list-style: none;
     border: 2px solid red;
     margin: 5px;
     border-radius: 15px;
 }
 
+.menuLateral  img {
+    width: 70%;
+    height: 70%;
+}
+
 .menuLateral a {
+    padding: 4px;
+    font-size: 15px;
+    border-radius: 15px;
+    margin: 0px; 
+    display: block; 
+    width: 100%; 
+    height: 100%;
     text-decoration: none ;
     color: #ffffff;
 
@@ -63,6 +78,8 @@ body {
     background-color: #ff0000;
     transition: 700ms;
 }
+
+
 
 
 
@@ -78,11 +95,6 @@ body {
 }
 
 
-#imagemH1 {
-    border-radius: 50px;
-    width: 20%;
-    height: 20%;
-}
 
 #pesquisa {
     border: 2px solid red;
@@ -91,15 +103,57 @@ body {
     
 }
 
+#primeiroParagrafo {
+    color: #ff0000;
+}
+
 /* ++++++++++++++ botoes +++++++++++++++*/
- #enviar, #atualizar, #excluir, #cancelar  {
-    border: 2px;
-    color: red;
+ #enviar, #atualizar, #excluir, #cancelar, #btPesquisa, #inserir  {
+    font-size: 12pt;
+    font-weight: bold;
+    border: 2px solid #ffffff;
+    background-color: #ff0000;
+    color: black;
     border-radius: 50px;
-    width: 10vw;
+    width: 8vw;
+    transition: 500ms;
     
 }
 
+#enviar:hover, #atualizar:hover, #excluir:hover, #cancelar:hover, #btPesquisa:hover,  #inserir:hover  {
+    background-color: #ffffff;
+    border: 2px solid #ff0000;
+    color: #08f400;
+    
+}
+/* --------------- pagina 1 ----------------------------*/
+
+#quadroCentral h1{
+   text-align: center;
+}
+
+#imagemH1 img{
+    width: 20%;
+    height: 20%;
+}
+
+#imagemH1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#saci {
+    margin: 20px;
+    width: 100%;
+    height: 100%;
+
+}
+/* --------------- tabela pagina 2 ---------------------*/
+
+#quadroCentral label{
+    font-size: 11pt;
+}
 
 .tabela {
   /* border: 2px solid #ff0000 ; */
@@ -110,28 +164,154 @@ body {
 }
 .tabela tr, td {
   
-   border: 2px solid #ff0000 ;
+  /* border: 2px solid #ff0000 ;*/
   /* border-radius: 35px; */ 
    padding: 13px;
-   margin-top: 8px;
+   margin-top: 0px;
     
 }
 
 
+
+.tabela img{
+    width: 95%;
+    height: 95%;
+    transition: 500ms;
+    margin: 0px;
+}
+
+.tabela img:hover {
+    width: 500%;
+    height: 500%;
+
+}
+
+.cabecalho td{
+    border: 1px solid #ffffff;
+    background-color: #ff0000;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 11pt;
+}
+
+.dados1 td{
+    background-color: #ea5d44;
+    font-size: 10pt;
+
+}
+
+.dados2 {
+    background-color: #e6529c;
+    font-size: 10pt;
+
+}
+
+
+
 /* --------------- formulario pagina 3 -----------------*/
 
+#inscricao{
+    border: 1px solid #ff0000;
+    padding: 15px;
+    border-radius: 15px;
+
+}
+
+#inscricao h1{
+    font-size:  13pt;
+    text-align: center;
+}
+
+#oFormulario {
+    font-family: 'Courier New', Courier, monospace;
+ 
+}
+
 #oFormulario fieldset{
+   
     margin: 5px;
     border-radius: 15px;
     border: 1px solid #ff0000;
 
 }
 
-#texto {
-    text-align: center;
+#oFormulario input, textarea, #selecao select{
+    border: 2px solid #ff0000;
+
 }
 
 #texto input{
-    text-align: center;
     width: 50vw;
+    border: 
+    2px solid #ff0000;
 }
+
+
+/* ---------------- pagina de processamento -----------------------*/
+
+#sucesso {
+    display: ;
+
+}
+
+#sucesso h1 {
+    text-align: center;
+    font-size: 12pt;
+    color: #ff0000;
+}
+
+#sucesso img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#fracasso {
+    display: none;
+}
+
+#fracasso h1{
+    text-align: center;
+    font-size: 12pt;
+    color: #ff0000;
+}
+
+#fracasso img{
+    width: 80%;
+    height: 80%;
+}
+
+
+#voltar {
+    text-align: center;
+    background-color: #ff0000;
+    border-radius: 15px;
+    width: 20vw;
+    transition: 500ms;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#voltar a{
+    font-weight: bold;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 15px;
+    margin: 0px; 
+    display: block; 
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 15px;
+    text-decoration: none;
+    color:#ffffff;
+    transition: 500ms;
+   
+}
+
+#voltar:hover > a {
+    background-color: #ffffff;
+    border: 1px solid #08f400;
+    color: #000000;
+}
+

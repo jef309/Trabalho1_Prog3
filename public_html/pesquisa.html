@@ -10,45 +10,100 @@
     </head> 
     <body>
         <div id="corpo">
-            <div class="banner">
-                <figure >
-                    <img src="imagens/banner.png" >
-                    <figcaption></figcaption>
-                </figure>
-            </div>
-
-            <div class="menuLateral">
-                <img  src="imagens/pumpkin-pequena.jpg" alt="Imagem de abobora fomarmado por dois olhso e um sorriso"/>
-                <nav id="navMenu">
-                    <menu id="menu"> <!-- fazer cor diferente para pagina atual -->
-                        <a href="index.html"><li> Pagina inicial </li></a>
-                        <a href="pesquisa.html"><li> Fastasias mais horrorosas pelo mundo </li></a>
-                        <a href="form.html"><li> Aboboras Magicas</li></a>
-                        <a href=""><li> Aboboras costumizadas </li></a>
-                        <a href=""><li> Datas Festivas</li></a>
-                    </menu>
-                </nav> 
-            </div>  
+            <header>
+                <div class="banner">
+                    <figure >
+                        <img src="imagens/banner.png" >
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+                <div class="menuLateral">
+                    <nav id="navMenu">
+                        <menu id="menu"> <!-- fazer cor diferente para pagina atual -->
+                            <li><a href="index.html"><img src="imagens/skull.png"> Pagina inicial </a></li>
+                            <li><a href="pesquisa.html"><img src="imagens/pumpkin-smile.png"> Fantasias Engraçadas</a></li>
+                            <li><a href="form.html"><img src="imagens/ghost.png"> Competição de Fantasias</a></li>
+                        </menu>
+                    </nav>
+                </div>
+            </header>
             
             <div id="quadroCentral">
-                <div> 
-                <img src="imagens/pumpkin-pequena.jpg"  alt="Imagem de abobora fomarmado por dois olhso e um sorriso..." id="imagemH1"/>
-                <h1> Você vai se surpreender </h1>
-                </div>
+               
+                <h1>Fantasias Engraçadas </h1>
+
                 <form >
-                    <input id="pesquisa" name="pesquisar" type=”search”;>
-                    <br></br>
-                    <input id="enviar" name="enviar" value="Enviar" type="submit">  <input id="atualizar" name="atulizar" value="Atualizar" type="reset">  <input id="excluir" name="Excluir" value="Excluir" type="reset"> 
-                    
-                    <table class="tabela" >
-                        <tr><td> Coluna 1</td> <td> Coluna 2 </td> <td> Coluna 3 </td> </tr>
-                        <tr><td> Linha 1 </td> <td>  </td> <td>  </td> </tr>
-                        <tr><td> Linha 2 </td> <td>  </td> <td>  </td> </tr>
-                        <tr><td> Linha 3 </td> <td>  </td> <td>  </td> </tr>
-                        <tr><td> Linha 4 </td> <td>  </td> <td>  </td> </tr>
-                    </table>
+                    <label for="pesquisa">Nome da Fantasia</label>
+                    <input id="pesquisa" name="pesquisar" type="search">
+                    <input id="btPesquisa" name="pesquisar" type="submit" value="Pesquisar">
+                </form>
+                <br>
+                <form>
+                    <input id="inserir" name="inserir" value="Inserir" type="submit">  
+                    <input id="atualizar" name="atulizar" value="Atualizar" type="submit">  
+                    <input id="excluir" name="Excluir" value="Excluir" type="reset"> 
                     
                 </form>
+
+                <table class="tabela" >
+                    <tr class="cabecalho">
+                        <td> CÓD. </td> 
+                        <td> Foto </td> 
+                        <td> País </td> 
+                        <td> Autor</td> 
+                        <td> Nome</td>
+                        <td> Observações</td>
+                    </tr>
+
+                    <tr class="dados1">
+                        <td> 001 </td> 
+                        <td>
+                             <img src="imagens/fantasias/familia-s.jpg" alt="quatro pessoas fantasiadas como a familia simpsons, porem a fantasia não é muito boa. da esquerda para a direita estão o Bart, Marge, Lisa e o Homer"> 
+                          
+                        </td> 
+                        <td> Com certeza nos estados unidos </td>
+                        <td> Desconhecido </td>
+                        <td> Família Simpsons </td>
+                        <td> Nenhuma </td>
+                    </tr>
+
+                    <tr class="dados2">
+                        <td> 002 </td> 
+                        <td> <img src="imagens/fantasias/fiona.jpg" alt="uma pessoa fantasiado de fiona, do filme shrek, porem a cara esta muito inchada, como se fosse uma reação alergica, e a fantasia parece estar caindo"> </td> 
+                        <td> Desconhecido </td>
+                        <td> Desconhecido </td>
+                        <td> Fiona Com Reação Alérgica </td>
+                        <td> Nenhuma </td>
+                    </tr>
+
+                    <tr class="dados1">
+                        <td> 003 </td> 
+                        <td> <img src="imagens/fantasias/minion-fantasma.jpg" alt="uma pessoa fantasia como um minion, do filme meu malvado favorito, em cima de uma moto. ele esta no meio de varias motos"> </td> 
+                        <td> Você sabe onde... </td>
+                        <td> Desconhecido </td>
+                        <td> Motoqueiro Minion Fantasma </td>
+                        <td> Nenhuma </td>
+                    </tr>
+
+                    <tr class="dados2">
+                        <td> 004 </td> 
+                        <td> <img src="imagens/fantasias/nascimento.jpg" alt="quatro pessoas ao redor de uma pessoa deitada sobre uma cama com as pernas abertas, e do meio das pernas esta saindo uma cabeça de um adulto, como se estivesse nascendo"> </td> 
+                        <td> Desconhecido </td>
+                        <td> Desconhecido </td>
+                        <td> O nascimento </td>
+                        <td> Nenhuma</td>
+                    </tr>
+
+                    <tr class="dados1">
+                        <td> 005 </td> 
+                        <td> <img src="imagens/fantasias/troopers-em-crise.jpg" alt="três pessoas fantasiadas com storm troopers, mas com fantasias feitas de papelao e bem quadradas"> </td> 
+                        <td> Desconhecido </td>
+                        <td> Desconhecido </td>
+                        <td> Troopers em crise </td>
+                        <td> Nenhuma </td>
+                    </tr>
+
+                </table>
             </div> 
       
         </div> 
