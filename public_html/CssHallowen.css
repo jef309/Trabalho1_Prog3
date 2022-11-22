@@ -15,6 +15,14 @@ body {
     width: 78vw;
     
 }
+
+#quadroCentral a{
+    color: #ea5d44;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
 /*------------------      banner ----------------------*/
 
 .banner img{
@@ -53,6 +61,8 @@ body {
     list-style: none;
     border: 2px solid red;
     margin: 5px;
+    width: 70%;
+    height: 70%;
     border-radius: 15px;
 }
 
@@ -108,7 +118,7 @@ body {
 }
 
 /* ++++++++++++++ botoes +++++++++++++++*/
- #enviar, #atualizar, #excluir, #cancelar, #btPesquisa, #inserir  {
+ #enviar, #atualizar, #excluir, #cancelar, #inserir  {
     font-size: 12pt;
     font-weight: bold;
     border: 2px solid #ffffff;
@@ -120,12 +130,34 @@ body {
     
 }
 
-#enviar:hover, #atualizar:hover, #excluir:hover, #cancelar:hover, #btPesquisa:hover,  #inserir:hover  {
+#btFiltrar{
+    width: 10vw;
+    background-color: #ea5d44;
+    padding: 4px;
+    border-radius: 15px;
+    border: 4px dashed #08f400;
+    font-size: 11pt;
+    font-weight: bolder;
+    color: #ffffff;
+    transition: 500ms;
+}
+
+#enviar:hover, #atualizar:hover, #excluir:hover, #cancelar:hover,  #inserir:hover  {
     background-color: #ffffff;
     border: 2px solid #ff0000;
     color: #08f400;
     
 }
+
+#btFiltrar:hover {
+
+    border: 4px solid #ff0000;
+    font-size: 11pt;
+    font-weight: bolder;
+    background-color: #08f400;
+    color: #ffffff;
+}
+
 /* --------------- pagina 1 ----------------------------*/
 
 #quadroCentral h1{
@@ -178,15 +210,19 @@ body {
     height: 95%;
     transition: 500ms;
     margin: 0px;
+    position: relative;
+    
 }
 
 .tabela img:hover {
-    width: 500%;
-    height: 500%;
+    width: 300%;
+    height: 300%;
 
 }
 
-.cabecalho td{
+
+.cabecalho th{
+    padding: 5px;
     border: 1px solid #ffffff;
     background-color: #ff0000;
     border-radius: 5px;
@@ -211,7 +247,7 @@ body {
 /* --------------- formulario pagina 3 -----------------*/
 
 #inscricao{
-    border: 1px solid #ff0000;
+    border: 4px solid #ea5d44;
     padding: 15px;
     border-radius: 15px;
 
@@ -236,14 +272,18 @@ body {
 }
 
 #oFormulario input, textarea, #selecao select{
-    border: 2px solid #ff0000;
+    border: 2px solid #e6529c;
 
 }
 
 #texto input{
     width: 50vw;
     border: 
-    2px solid #ff0000;
+    2px solid #e6529c;
+}
+
+#apresentacao  input {
+    background-color: #08f400;
 }
 
 
@@ -256,6 +296,7 @@ body {
 
 #sucesso h1 {
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 12pt;
     color: #ff0000;
 }
@@ -272,6 +313,7 @@ body {
 
 #fracasso h1{
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 12pt;
     color: #ff0000;
 }

@@ -34,8 +34,8 @@
 
                 <form >
                     <label for="pesquisa">Nome da Fantasia</label>
-                    <input id="pesquisa" name="pesquisar" type="search">
-                    <input id="btPesquisa" name="pesquisar" type="submit" value="Pesquisar">
+                    <input id="pesquisa" name="filtrar" type="search">
+                    <input id="btFiltrar" name="filtrar" type="submit" value="filtrar">
                 </form>
                 <br>
                 <form>
@@ -45,62 +45,64 @@
                     
                 </form>
 
+            
                 <table class="tabela" >
                     <tr class="cabecalho">
-                        <td> CÓD. </td> 
-                        <td> Foto </td> 
-                        <td> País </td> 
-                        <td> Autor</td> 
-                        <td> Nome</td>
-                        <td> Observações</td>
+                        <th> Seleção </th>
+                        <th> CÓD. </th> 
+                        <th> Foto </th> 
+                        <th> País </th> 
+                        <th> Autor</th> 
+                        <th> Nome</th>
                     </tr>
 
                     <tr class="dados1">
+                        <td> <input type="checkbox" name="selecao"> </td>
                         <td> 001 </td> 
                         <td>
-                             <img src="imagens/fantasias/familia-s.jpg" alt="quatro pessoas fantasiadas como a familia simpsons, porem a fantasia não é muito boa. da esquerda para a direita estão o Bart, Marge, Lisa e o Homer"> 
-                          
+                            <img src="imagens/fantasias/familia-s.jpg" alt="quatro pessoas fantasiadas como a familia simpsons, porem a fantasia não é muito boa. da esquerda para a direita estão o Bart, Marge, Lisa e o Homer"> 
+                            
                         </td> 
                         <td> Com certeza nos estados unidos </td>
                         <td> Desconhecido </td>
                         <td> Família Simpsons </td>
-                        <td> Nenhuma </td>
                     </tr>
 
                     <tr class="dados2">
+                        <td> <input type="checkbox" name="selecao"> </td>
                         <td> 002 </td> 
                         <td> <img src="imagens/fantasias/fiona.jpg" alt="uma pessoa fantasiado de fiona, do filme shrek, porem a cara esta muito inchada, como se fosse uma reação alergica, e a fantasia parece estar caindo"> </td> 
                         <td> Desconhecido </td>
                         <td> Desconhecido </td>
                         <td> Fiona Com Reação Alérgica </td>
-                        <td> Nenhuma </td>
                     </tr>
 
                     <tr class="dados1">
+                        <td> <input type="checkbox" name="selecao"> </td>
                         <td> 003 </td> 
                         <td> <img src="imagens/fantasias/minion-fantasma.jpg" alt="uma pessoa fantasia como um minion, do filme meu malvado favorito, em cima de uma moto. ele esta no meio de varias motos"> </td> 
                         <td> Você sabe onde... </td>
                         <td> Desconhecido </td>
                         <td> Motoqueiro Minion Fantasma </td>
-                        <td> Nenhuma </td>
+
                     </tr>
 
                     <tr class="dados2">
+                        <td> <input type="checkbox" name="selecao"> </td>
                         <td> 004 </td> 
                         <td> <img src="imagens/fantasias/nascimento.jpg" alt="quatro pessoas ao redor de uma pessoa deitada sobre uma cama com as pernas abertas, e do meio das pernas esta saindo uma cabeça de um adulto, como se estivesse nascendo"> </td> 
                         <td> Desconhecido </td>
                         <td> Desconhecido </td>
                         <td> O nascimento </td>
-                        <td> Nenhuma</td>
                     </tr>
 
                     <tr class="dados1">
+                        <td> <input type="checkbox" name="selecao"> </td>
                         <td> 005 </td> 
                         <td> <img src="imagens/fantasias/troopers-em-crise.jpg" alt="três pessoas fantasiadas com storm troopers, mas com fantasias feitas de papelao e bem quadradas"> </td> 
                         <td> Desconhecido </td>
                         <td> Desconhecido </td>
                         <td> Troopers em crise </td>
-                        <td> Nenhuma </td>
                     </tr>
 
                 </table>
